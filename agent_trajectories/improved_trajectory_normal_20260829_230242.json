@@ -1,0 +1,57 @@
+{
+  "test_name": "KYC Verification Requirements",
+  "trajectory": [
+    {
+      "step": "retrieval",
+      "details": {
+        "query": "What documents are needed for KYC verification?",
+        "attempt": 1
+      }
+    },
+    {
+      "step": "retrieval_result",
+      "details": {
+        "chunks_found": 3,
+        "confidence_scores": [
+          0.43214285714285716,
+          0.3464285714285714,
+          0.3464285714285714
+        ]
+      }
+    },
+    {
+      "step": "answer_generation",
+      "details": {
+        "answer": "oval.\n2. Initial Assessment\nUpon receipt, claims are logged and assigned claim number. Initial asses"
+      }
+    },
+    {
+      "step": "verification",
+      "details": {
+        "attempt": 1
+      }
+    },
+    {
+      "step": "verification_result",
+      "details": {
+        "verified": true,
+        "confidence": 0.8913690476190477,
+        "explanation": "Answer verified: 100% of claims grounded in chunks"
+      }
+    },
+    {
+      "step": "evidence_compilation",
+      "details": {
+        "evidence_items": 3
+      }
+    },
+    {
+      "step": "final_response",
+      "details": {
+        "compliant": true,
+        "confidence": 0.8913690476190477
+      }
+    }
+  ],
+  "timestamp": "20260829_230242"
+}

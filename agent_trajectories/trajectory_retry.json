@@ -1,0 +1,30 @@
+{
+  "question": "Loan without KYC? Contradiction",
+  "steps": [
+    {
+      "agent": "retriever",
+      "citation": "SOP_Loan.pdf p1"
+    },
+    {
+      "agent": "verifier",
+      "output": "Contradiction detected, RETRY",
+      "retry": true
+    },
+    {
+      "agent": "retriever_2",
+      "citation": "SOP_KYC.pdf p3"
+    },
+    {
+      "agent": "compliance",
+      "evidence": [
+        {
+          "source": "SOP_KYC.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 0.82,
+      "needs_human_review": true
+    }
+  ],
+  "result": "PASS after retry"
+}

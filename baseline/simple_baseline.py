@@ -43,9 +43,9 @@ class SimpleBaselineRAG:
                 for page in reader.pages:
                     text += page.extract_text() or ""
                 self.documents[pdf_path.name] = text
-                print(f"✓ Loaded: {pdf_path.name}")
+                print(f"[OK] Loaded: {pdf_path.name}")
             except Exception as e:
-                print(f"✗ Failed to load {pdf_path.name}: {e}")
+                print(f"[ERROR] Failed to load {pdf_path.name}: {e}")
     
     def retrieve(self, query: str, top_k: int = 1) -> List[Tuple[str, str]]:
         """

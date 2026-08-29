@@ -1,0 +1,24 @@
+{
+  "question": "What docs for KYC?",
+  "steps": [
+    {
+      "agent": "retriever",
+      "citation": "SOP_KYC.pdf p2"
+    },
+    {
+      "agent": "verifier",
+      "retry": false
+    },
+    {
+      "agent": "compliance",
+      "evidence": [
+        {
+          "source": "SOP_KYC.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 0.88
+    }
+  ],
+  "result": "PASS"
+}
