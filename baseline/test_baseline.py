@@ -52,8 +52,8 @@ class TestResults:
         
         print("\nDetailed Results:")
         for i, test in enumerate(self.tests, 1):
-            status = "✓" if test['passed'] else "✗"
-            print(f"\n{status} Test {i}: {test['name']}")
+            status = "PASS" if test['passed'] else "FAIL"
+            print(f"\n[{status}] Test {i}: {test['name']}")
             print(f"  Expected: {test['expected']}")
             print(f"  Actual: {test['actual'][:100]}...")
 
@@ -199,11 +199,11 @@ def main():
         try:
             passed, expected, actual = test_func()
             results.record(test_name, passed, expected, actual)
-            status = "✓" if passed else "✗"
-            print(f"{status} {test_name}")
+            status = "PASS" if passed else "FAIL"
+            print(f"[{status}] {test_name}")
         except Exception as e:
             results.record(test_name, False, "No exception", str(e))
-            print(f"✗ {test_name} (Exception: {e})")
+            print(f"[FAIL] {test_name} (Exception: {e})")
     
     results.print_summary()
     return results
