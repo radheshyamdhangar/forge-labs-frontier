@@ -63,6 +63,6 @@ For frontier compliance tasks, *adding a Verifier agent with retry gives +70% li
 
 ### 7. Team & Links
 - *Repo:* https://github.com/radheshyamdhanger/forge-labs-frontier
-- *Video:* Coming soon [Loom/Youtube Link - 3 min demo]
+- *Video:*  [Loom/Youtube Link - https://www.loom.com/share/c0de615ad6f9478f830c79e735030fb1]
 - *CHANGELOG:* [CHANGELOG.md](./CHANGELOG.md)
 - *Idea:* .idea folder has SOP PDFs used for eval
