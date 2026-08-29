@@ -16,4 +16,4 @@
 
 ## Hot Take
 Verification > Better Retrieval for BFSI compliance
-"@ | Out-File -Encoding utf8 CHANGELOG.md
+
